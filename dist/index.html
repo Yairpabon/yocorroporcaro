@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#ed096b">
+    <meta name="description"
+        content="Yo Corro por Caro. Más que una carrera, un movimiento por todas. 24 de octubre de 2026, Santa Marta.">
+    <title>Yo Corro por Caro · Santa Marta 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo-dark.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/hero.webp" as="image">
+</head>
+
+<body>
+    <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+            <symbol id="arrow" viewBox="0 0 24 24">
+                <path d="M4 12h15m-6-6 6 6-6 6" />
+            </symbol>
+            <symbol id="calendar" viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="16" rx="2" />
+                <path d="M7 3v4m10-4v4M3 10h18m-13 4h1m6 0h1m-8 3h1m6 0h1" />
+            </symbol>
+            <symbol id="pin" viewBox="0 0 24 24">
+                <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
+                <circle cx="12" cy="10" r="2.5" />
+            </symbol>
+            <symbol id="heart" viewBox="0 0 24 24">
+                <path d="m12 21-9-9C-3 5 6-2 12 5c6-7 15 0 9 7Z" />
+            </symbol>
+            <symbol id="people" viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="3" />
+                <path
+                    d="M6 21v-3a6 6 0 0 1 12 0v3Zm-3-11a3 3 0 1 1 3-5m15 5a3 3 0 1 0-3-5M2 20v-3a5 5 0 0 1 3-4m17 7v-3a5 5 0 0 0-3-4" />
+            </symbol>
+            <symbol id="run" viewBox="0 0 24 24">
+                <circle cx="16" cy="4" r="2" />
+                <path d="m4 9 5-3 5 3-4 6 5 2-3 5m-2-7-3 4-5 2m12-12 3 3h5" />
+            </symbol>
+            <symbol id="shoe" viewBox="0 0 24 24">
+                <path d="m15 3 3 8 4 5v4H3c-2 0-2-4 0-5l6-2 6-10Z" />
+                <path d="m11 10 4 2m-6 1 4 2M2 17h20" />
+            </symbol>
+            <symbol id="check" viewBox="0 0 24 24">
+                <path d="m5 12 4 4L19 6" />
+            </symbol>
+            <symbol id="close" viewBox="0 0 24 24">
+                <path d="m5 5 14 14M19 5 5 19" />
+            </symbol>
+        </defs>
+    </svg>
+    <header class="header" id="header">
+        <div class="nav-wrap"><a class="brand" href="#inicio" aria-label="Yo Corro por Caro, inicio">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="assets/logo-blanco-principal.svg"><img
+                        src="assets/logo-dark-pink.svg" alt="Yo Corro por Caro ¿y tú por quién?" width="116"
+                        height="112">
+                </picture>
+            </a>
+            <nav id="main-nav" aria-label="Navegación principal"><a href="#inicio" class="active">Inicio</a><a
+                    href="#carrera">La carrera</a><a href="#inscripciones">Inscripciones</a><a href="#kit">Kit</a><a
+                    href="#ruta">Ruta</a><a href="#comunidad">Comunidad</a><a href="#faq">FAQ</a></nav>
+            <button class="button nav-cta" data-register>Inscríbete ahora <svg>
+                    <use href="#arrow" />
+                </svg></button>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="main-nav"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <picture class="hero-photo"><img src="assets/hero.webp"
+                    alt="Corredora con la camiseta de Yo Corro por Caro junto al mar" fetchpriority="high" width="1672"
+                    height="941"></picture>
+            <div class="hero-fade"></div>
+            <div class="container hero-inner">
+                <div class="hero-copy"><span class="eyebrow hero-eyebrow">SANTA MARTA · 2026</span>
+                    <h1 id="hero-title">Más que<br>una carrera,</h1>
+                    <p class="handwritten">un movimiento<br>por todas. <span>♥</span></p>
+                    <div class="event-meta">
+                        <div><svg>
+                                <use href="#calendar" />
+                            </svg><span>OCTUBRE<strong>24 / 2026</strong></span></div>
+                        <div><svg>
+                                <use href="#pin" />
+                            </svg><span>SANTA MARTA<strong>MAGDALENA</strong></span></div>
+                    </div>
+                    <button class="button" data-register>Inscríbete ahora <svg>
+                            <use href="#arrow" />
+                        </svg></button>
+                    <p class="hero-note">Cada paso tiene un propósito. ¿Cuál es el tuyo?</p>
+                </div>
+            </div>
+            <a class="scroll-cue" href="#carrera" aria-label="Descubrir la carrera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+        </section>
+        <section class="purpose section" id="carrera" aria-labelledby="purpose-title">
+            <div class="container">
+                <div class="purpose-grid">
+                    <div class="section-copy"><span class="eyebrow">UN PROPÓSITO QUE NOS UNE</span>
+                        <h2 id="purpose-title">Corremos por<br><span class="underline">más mujeres</span></h2>
+                        <p>Por ti. Por ella. Por quienes nos inspiran a seguir. Yo Corro por Caro es una invitación a
+                            encontrarnos a través del deporte y a dar cada paso con un propósito.</p><a
+                            class="button button-soft" href="#movimiento">Conoce el movimiento <svg>
+                                <use href="#arrow" />
+                            </svg></a>
+                        <div class="movement-values" id="movimiento" aria-label="Valores del movimiento">
+<div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 32 8 20C1 13 9 5 16 11l4 4 4-4c7-6 15 2 8 9Z"/><path d="M20 2v4M7 5l3 3M33 5l-3 3"/></svg><span class="movement-value-name">Salud</span></div>
+<div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34C9 26 10 15 20 4c10 11 11 22 0 30Z"/><path d="M20 34C7 33 3 24 3 14c10 1 16 8 17 20Zm0 0c13-1 17-10 17-20-10 1-16 8-17 20Z"/><path d="M20 34C8 37 3 30 1 25m19 9c12 3 17-4 19-9"/></svg><span class="movement-value-name">Prioridad</span></div>
+<div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 31h34M9 31a11 11 0 0 1 22 0"/><path d="M20 3v6M6 10l4 4m24-4-4 4M2 21l5 1m31-1-5 1"/></svg><span class="movement-value-name">Vida</span></div>
+<div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="m18 34-11-11C0 16 7 8 14 13l4 4 4-4c7-5 14 3 7 10Z"/><path d="m29 3-2 6m11 2-6 2m4 11-4-3"/></svg><span class="movement-value-name">Amor</span></div>
+</div>
+                    </div>
+                    <div class="purpose-visual"><img class="decorative-brush" src="assets/brush.svg" alt=""><img
+                            class="purpose-photo" src="assets/hero.webp" alt="La alegría de correr con un propósito"
+                            loading="lazy"><span class="photo-caption">Yo corro por ti,<br><em>por ellas, por
+                                todas.</em></span></div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="kit section" id="kit" aria-labelledby="kit-title">
+            <div class="container kit-grid">
+                <div class="section-copy"><span class="eyebrow">EL UNIVERSO DE LA CARRERA</span>
+                    <h2 id="kit-title">Llévate más<br>que una <span class="underline">medalla</span></h2>
+                    <p>Una identidad que llevas contigo. Descubre los diseños preparados para Yo Corro por Caro.</p>
+                    <ul class="check-list">
+                        <li>Camiseta del evento</li>
+                        <li>Medalla conmemorativa</li>
+                        <li>Visera y termo con nuestra identidad</li>
+                    </ul>
+                    <p class="fine-print">Diseños del evento. El contenido final del kit se anunciará junto con las
+                        inscripciones.</p><button class="button kit-button" data-kit>Ver detalles del kit <svg>
+                            <use href="#arrow" />
+                        </svg></button>
+                </div>
+                <div class="kit-visual kit-official"><img src="assets/kit-de-carrera.jpg"
+                        alt="Kit de carrera de Yo Corro por Caro: camisetas, termo, visera, dorsal y abanico"
+                        loading="lazy" width="1536" height="1024"></div>
+            </div>
+        </section>
+        <section class="route" id="ruta" aria-labelledby="route-title">
+            <div class="route-visual"><img src="assets/hero.webp" alt="Paisaje costero del recurso visual de la carrera"
+                    loading="lazy"><span class="location-label"><svg>
+                        <use href="#pin" />
+                    </svg> SANTA MARTA, MAGDALENA</span></div>
+            <div class="route-copy"><span class="eyebrow">EL MAR COMO INSPIRACIÓN</span>
+                <h2 id="route-title">Nos encontramos <br><span class="underline">en Santa Marta</span></h2>
+                <p>El 24 de octubre, nuestra ciudad será el punto de encuentro para correr por lo que nos inspira.</p>
+                <div class="route-facts">
+                    <div><svg>
+                            <use href="#pin" />
+                        </svg><span><strong>Inicio / Meta</strong>Próximamente</span></div>
+                    <div><svg>
+                            <use href="#shoe" />
+                        </svg><span><strong>Ruta oficial</strong>Por anunciar</span></div>
+                </div><button class="button" data-route>Información de la ruta <svg>
+                        <use href="#arrow" />
+                    </svg></button>
+            </div>
+        </section>
+        <section class="distances section" id="distancias">
+            <div class="container distance-layout">
+                <div><span class="eyebrow">CADA PASO CUENTA</span>
+                    <h2>Tu motivo. <br>Tu próximo reto.</h2>
+                    <p>Los detalles de las distancias y categorías<br class="desktop-only"> se publicarán con las
+                        inscripciones.</p>
+                </div>
+                <div class="distance-cards">
+                    <article><svg>
+                            <use href="#shoe" />
+                        </svg>
+                        <h3>Distancias</h3>
+                        <p>Por anunciar</p><span></span>
+                    </article>
+                    <article><svg>
+                            <use href="#people" />
+                        </svg>
+                        <h3>Categorías</h3>
+                        <p>Próximamente</p><span></span>
+                    </article>
+                    <article><svg>
+                            <use href="#heart" />
+                        </svg>
+                        <h3>Tu motivo</h3>
+                        <p>Lo eliges tú</p><span></span>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="emotional-cta" id="inscripciones"><img src="assets/hero.webp" alt="" loading="lazy">
+            <div class="container">
+                <div><span class="eyebrow">24 OCTUBRE · SANTA MARTA</span>
+                    <h2>Es momento de correr<br>por lo que te inspira.</h2><button class="button button-white"
+                        data-register>Inscríbete ahora <svg>
+                            <use href="#arrow" />
+                        </svg></button>
+                    <p>Inscripciones disponibles próximamente.</p>
+                </div>
+            </div>
+        </section>
+        <section class="community section" id="comunidad" aria-labelledby="community-title">
+            <div class="container">
+                <div class="gallery-heading">
+                    <div><span class="eyebrow">NUESTRA COMUNIDAD</span>
+                        <h2 id="community-title">Historias que inspiran</h2>
+                    </div>
+                    <p>Cada persona tiene un motivo.<br>El nuestro es encontrarnos.</p>
+                </div>
+                <div class="gallery-shell"><button class="gallery-arrow previous"
+                        aria-label="Imagen anterior">‹</button>
+                    <div class="gallery-track" id="gallery-track">
+                        <figure class="gallery-item"><img src="assets/hero.webp" alt="Corredora de Yo Corro por Caro"
+                                loading="lazy" style="object-position:57% center">
+                            <figcaption>Por quienes nos inspiran.</figcaption>
+                        </figure>
+                        <figure class="gallery-item"><img src="assets/hero.webp"
+                                alt="Participantes en el recurso visual del evento" loading="lazy"
+                                style="object-position:100% center">
+                            <figcaption>Por la fuerza de estar juntas.</figcaption>
+                        </figure>
+                        <figure class="gallery-item"><img src="assets/hero.webp"
+                                alt="El mar y el atardecer en el recurso visual del evento" loading="lazy"
+                                style="object-position:0% center">
+                            <figcaption>Por nuestra ciudad.</figcaption>
+                        </figure>
+                        <figure class="gallery-item"><img src="assets/shirt.webp"
+                                alt="Identidad gráfica en la camiseta del evento" loading="lazy">
+                            <figcaption>Por lo que llevamos en el corazón.</figcaption>
+                        </figure>
+                        <figure class="gallery-item"><img src="assets/medal.webp" alt="Medalla diseñada para la carrera"
+                                loading="lazy">
+                            <figcaption>Por cada paso que cuenta.</figcaption>
+                        </figure>
+                    </div><button class="gallery-arrow next" aria-label="Siguiente imagen">›</button>
+                </div>
+                <div class="gallery-dots" aria-label="Seleccionar imagen"></div>
+                <p class="gallery-note">Una mirada a la identidad visual del evento.</p>
+            </div>
+        </section>
+        <section class="faq section" id="faq" aria-labelledby="faq-title">
+            <div class="container faq-grid">
+                <div><span class="eyebrow">PREGUNTAS FRECUENTES</span>
+                    <h2 id="faq-title">Resolvemos <br><span class="underline">tus dudas</span></h2>
+                </div>
+                <div class="accordion">
+                    <details>
+                        <summary>¿Cuándo y dónde será la carrera?<span>+</span></summary>
+                        <div>La carrera se realizará el 24 de octubre de 2026 en Santa Marta, Magdalena. El punto de
+                            encuentro y los horarios se anunciarán próximamente.</div>
+                    </details>
+                    <details>
+                        <summary>¿Cómo puedo inscribirme?<span>+</span></summary>
+                        <div>Las inscripciones se habilitarán próximamente. En esta página encontrarás el enlace oficial
+                            cuando esté disponible.</div>
+                    </details>
+                    <details>
+                        <summary>¿Qué incluye el kit?<span>+</span></summary>
+                        <div>El material del evento presenta diseños de camiseta, medalla, visera y termo. La
+                            organización confirmará los elementos incluidos en el kit y las condiciones de entrega.
+                        </div>
+                    </details>
+                    <details>
+                        <summary>¿Cuál es la ruta y cuáles son las distancias?<span>+</span></summary>
+                        <div>La ruta oficial, las distancias y las categorías están pendientes de publicación.
+                            Compartiremos el mapa confirmado por la organización.</div>
+                    </details>
+                    <details>
+                        <summary>¿Dónde y cuándo es la entrega de kits?<span>+</span></summary>
+                        <div>El lugar, las fechas y los requisitos para recoger el kit se anunciarán junto con la
+                            información de inscripciones.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="closing">
+            <div class="container">
+                <p class="handwritten">Yo corro por ti,<br>por ellas, por todas. <span>♥</span></p><button
+                    class="button" data-register>Inscríbete ahora <svg>
+                        <use href="#arrow" />
+                    </svg></button>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a class="brand" href="#inicio" aria-label="Yo Corro por Caro, volver al inicio"><picture><source media="(max-width:767px)" srcset="assets/logo-blanco-principal.svg"><img src="assets/logo-dark-pink.svg" alt="Yo Corro por Caro ¿y tú por quién?" width="116" height="112" loading="lazy"></picture></a>
+                <nav aria-label="Navegación del pie"><a href="#carrera">La carrera</a><a href="#inscripciones">Inscripciones</a><a href="#kit">Kit</a><a href="#ruta">Ruta</a><a href="#comunidad">Comunidad</a><a href="#faq">Preguntas frecuentes</a></nav>
+                <div class="organizers"><span class="eyebrow">ORGANIZA</span><div>
+                    <picture><source media="(max-width:767px)" srcset="assets/organizer-1.svg"><img src="assets/organizer-1-pink.svg" alt="Margarita Gobernadora" loading="lazy"></picture>
+                    <picture><source media="(max-width:767px)" srcset="assets/organizer-2.svg"><img src="assets/organizer-2-pink.svg" alt="Gobernación del Magdalena" loading="lazy"></picture>
+                    <picture><source media="(max-width:767px)" srcset="assets/organizer-3.svg"><img src="assets/organizer-3-pink.svg" alt="Indeportes y Fundación Corazón Rosa" loading="lazy"></picture>
+                </div></div>
+            </div>
+            <div class="footer-bottom"><p>SYMPLEX TECHNOLOGY BY YAIR PABON</p><span>Hecho de pasos, motivos y corazón. <b>♥</b></span></div>
+        </div>
+    </footer>
+    <dialog id="info-dialog" aria-labelledby="dialog-title"><button class="dialog-close"
+            aria-label="Cerrar ventana"><svg>
+                <use href="#close" />
+            </svg></button>
+        <div id="dialog-content"></div><button class="button dialog-done">Entendido <svg>
+                <use href="#check" />
+            </svg></button>
+    </dialog>
+    <dialog id="welcome-dialog" tabindex="-1" aria-label="Octubre, mes rosa: juntas por la vida">
+        <div class="welcome-artwork"><img src="assets/imagen-modal.jpg" alt="Octubre, mes rosa. El mes del amor y de la sensibilización. Juntas por la vida. Pasos para autorevisarte: frente al espejo, palpa con la mano, revisa axilas, en posición acostada y observa el pezón. Conócete, cuídate y corre por muchas más historias." width="1024" height="1536" fetchpriority="high"><button class="welcome-close" type="button" aria-label="Cerrar anuncio" title="Cerrar anuncio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+        <a class="welcome-full-image" href="assets/imagen-modal.jpg" target="_blank" rel="noopener">Ver imagen ampliada <span aria-hidden="true">↗</span></a>
+    </dialog>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
