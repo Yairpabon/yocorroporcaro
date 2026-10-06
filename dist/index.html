@@ -10,6 +10,7 @@
     <title>Yo Corro por Caro · Santa Marta 2026</title>
     <link rel="preload" href="assets/fonts/Metropolis-Regular.otf" as="font" type="font/otf" crossorigin>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="registration.css">
     <link rel="icon" href="assets/logo-dark.svg" type="image/svg+xml">
     <link rel="preload" href="assets/hero-costero.webp" as="image" media="(min-width:768px)">
     <link rel="preload" href="assets/hero-costero-telefono.webp" as="image" media="(max-width:767px)">
@@ -73,9 +74,12 @@
     </header>
     <main>
         <section class="hero" id="inicio" aria-labelledby="hero-title">
-            <picture class="hero-photo"><source media="(max-width:767px)" srcset="assets/hero-costero-telefono.webp" width="941" height="1672"><img src="assets/hero-costero.webp"
-                    alt="Corredoras de Yo Corro por Caro frente al mar, entre palmeras y montañas de Santa Marta" fetchpriority="high" width="1916"
-                    height="821"></picture>
+            <picture class="hero-photo">
+                <source media="(max-width:767px)" srcset="assets/hero-costero-telefono.webp" width="941" height="1672">
+                <img src="assets/hero-costero.webp"
+                    alt="Corredoras de Yo Corro por Caro frente al mar, entre palmeras y montañas de Santa Marta"
+                    fetchpriority="high" width="1916" height="821">
+            </picture>
             <div class="hero-fade"></div>
             <div class="container hero-inner">
                 <div class="hero-copy"><span class="eyebrow hero-eyebrow">SANTA MARTA · 2026</span>
@@ -95,7 +99,10 @@
                     <p class="hero-note">Cada paso tiene un propósito. ¿Cuál es el tuyo?</p>
                 </div>
             </div>
-            <a class="scroll-cue" href="#carrera" aria-label="Descubrir la carrera"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+            <a class="scroll-cue" href="#carrera" aria-label="Descubrir la carrera"><svg viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path d="m6 9 6 6 6-6" />
+                </svg></a>
         </section>
         <section class="purpose section" id="carrera" aria-labelledby="purpose-title">
             <div class="container">
@@ -108,18 +115,32 @@
                                 <use href="#arrow" />
                             </svg></a>
                         <div class="movement-values" id="movimiento" aria-label="Valores del movimiento">
-<div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 32 8 20C1 13 9 5 16 11l4 4 4-4c7-6 15 2 8 9Z"/><path d="M20 2v4M7 5l3 3M33 5l-3 3"/></svg><span class="movement-value-name">Salud</span></div>
-<div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34C9 26 10 15 20 4c10 11 11 22 0 30Z"/><path d="M20 34C7 33 3 24 3 14c10 1 16 8 17 20Zm0 0c13-1 17-10 17-20-10 1-16 8-17 20Z"/><path d="M20 34C8 37 3 30 1 25m19 9c12 3 17-4 19-9"/></svg><span class="movement-value-name">Prioridad</span></div>
-<div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 31h34M9 31a11 11 0 0 1 22 0"/><path d="M20 3v6M6 10l4 4m24-4-4 4M2 21l5 1m31-1-5 1"/></svg><span class="movement-value-name">Vida</span></div>
-<div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="m18 34-11-11C0 16 7 8 14 13l4 4 4-4c7-5 14 3 7 10Z"/><path d="m29 3-2 6m11 2-6 2m4 11-4-3"/></svg><span class="movement-value-name">Amor</span></div>
-</div>
+                            <div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true">
+                                    <path d="M20 32 8 20C1 13 9 5 16 11l4 4 4-4c7-6 15 2 8 9Z" />
+                                    <path d="M20 2v4M7 5l3 3M33 5l-3 3" />
+                                </svg><span class="movement-value-name">Salud</span></div>
+                            <div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true">
+                                    <path d="M20 34C9 26 10 15 20 4c10 11 11 22 0 30Z" />
+                                    <path
+                                        d="M20 34C7 33 3 24 3 14c10 1 16 8 17 20Zm0 0c13-1 17-10 17-20-10 1-16 8-17 20Z" />
+                                    <path d="M20 34C8 37 3 30 1 25m19 9c12 3 17-4 19-9" />
+                                </svg><span class="movement-value-name">Prioridad</span></div>
+                            <div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true">
+                                    <path d="M3 31h34M9 31a11 11 0 0 1 22 0" />
+                                    <path d="M20 3v6M6 10l4 4m24-4-4 4M2 21l5 1m31-1-5 1" />
+                                </svg><span class="movement-value-name">Vida</span></div>
+                            <div class="movement-value"><svg viewBox="0 0 40 40" aria-hidden="true">
+                                    <path d="m18 34-11-11C0 16 7 8 14 13l4 4 4-4c7-5 14 3 7 10Z" />
+                                    <path d="m29 3-2 6m11 2-6 2m4 11-4-3" />
+                                </svg><span class="movement-value-name">Amor</span></div>
+                        </div>
                     </div>
                     <div class="purpose-visual"><img class="decorative-brush" src="assets/brush.svg" alt=""><img
                             class="purpose-photo" src="assets/hero.webp" alt="La alegría de correr con un propósito"
                             loading="lazy"><span class="photo-caption">Yo corro por ti,<br><em>por ellas, por
                                 todas.</em></span></div>
                 </div>
-                
+
             </div>
         </section>
         <section class="kit section" id="kit" aria-labelledby="kit-title">
@@ -137,13 +158,16 @@
                             <use href="#arrow" />
                         </svg></button>
                 </div>
-                <div class="kit-visual kit-official"><img src="assets/kit-de-carrera.jpg"
-                        alt="Kit de carrera de Yo Corro por Caro: camisetas, termo, visera, dorsal y abanico"
-                        loading="lazy" width="1536" height="1024"></div>
+                <div class="kit-visual kit-official"><img src="assets/kit-de-carrera-completo.png"
+                        alt="Kit de carrera de Yo Corro por Caro: camisetas, termo, visera, dorsal, abanico y medalla"
+                        loading="lazy" width="1448" height="1086"></div>
             </div>
         </section>
         <section class="route" id="ruta" aria-labelledby="route-title">
-            <div class="route-visual"><button class="route-preview" data-route aria-label="Ampliar mapa del recorrido"><img src="assets/recorrido.webp" width="3001" height="4001" alt="Mapa del recorrido en Santa Marta" loading="lazy"><span class="route-preview-label">Ampliar mapa</span></button></div>
+            <div class="route-visual"><button class="route-preview" data-route
+                    aria-label="Ampliar mapa del recorrido"><img src="assets/recorrido.webp" width="3001" height="4001"
+                        alt="Mapa del recorrido en Santa Marta" loading="lazy"><span class="route-preview-label">Ampliar
+                        mapa</span></button></div>
             <div class="route-copy"><span class="eyebrow">EL MAR COMO INSPIRACIÓN</span>
                 <h2 id="route-title">Nos encontramos <br><span class="underline">en Santa Marta</span></h2>
                 <p>El 24 de octubre, nuestra ciudad será el punto de encuentro para correr por lo que nos inspira.</p>
@@ -262,7 +286,8 @@
                     </details>
                     <details>
                         <summary>¿Cuál es la ruta y cuáles son las distancias?<span>+</span></summary>
-                        <div>Puedes consultar el mapa del recorrido en la sección Ruta. Las distancias y las categorías se confirmarán próximamente.</div>
+                        <div>Puedes consultar el mapa del recorrido en la sección Ruta. Las distancias y las categorías
+                            se confirmarán próximamente.</div>
                     </details>
                     <details>
                         <summary>¿Dónde y cuándo es la entrega de kits?<span>+</span></summary>
@@ -284,15 +309,37 @@
     <footer id="footer">
         <div class="container">
             <div class="footer-top">
-                <a class="brand" href="#inicio" aria-label="Yo Corro por Caro, volver al inicio"><picture><source media="(max-width:767px)" srcset="assets/logo-blanco-principal.svg"><img src="assets/logo-dark-pink.svg" alt="Yo Corro por Caro ¿y tú por quién?" width="116" height="112" loading="lazy"></picture></a>
-                <nav aria-label="Navegación del pie"><a href="#carrera">La carrera</a><a href="#inscripciones">Inscripciones</a><a href="#kit">Kit</a><a href="#ruta">Ruta</a><a href="#comunidad">Comunidad</a><a href="#faq">Preguntas frecuentes</a></nav>
-                <div class="organizers"><span class="eyebrow">ORGANIZA</span><div>
-                    <picture><source media="(max-width:767px)" srcset="assets/organizer-1.svg"><img src="assets/organizer-1-pink.svg" alt="Margarita Gobernadora" loading="lazy"></picture>
-                    <picture><source media="(max-width:767px)" srcset="assets/organizer-2.svg"><img src="assets/organizer-2-pink.svg" alt="Gobernación del Magdalena" loading="lazy"></picture>
-                    <picture><source media="(max-width:767px)" srcset="assets/organizer-3.svg"><img src="assets/organizer-3-pink.svg" alt="Indeportes y Fundación Corazón Rosa" loading="lazy"></picture>
-                </div></div>
+                <a class="brand" href="#inicio" aria-label="Yo Corro por Caro, volver al inicio">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="assets/logo-blanco-principal.svg"><img
+                            src="assets/logo-dark-pink.svg" alt="Yo Corro por Caro ¿y tú por quién?" width="116"
+                            height="112" loading="lazy">
+                    </picture>
+                </a>
+                <nav aria-label="Navegación del pie"><a href="#carrera">La carrera</a><a
+                        href="#inscripciones">Inscripciones</a><a href="#kit">Kit</a><a href="#ruta">Ruta</a><a
+                        href="#comunidad">Comunidad</a><a href="#faq">Preguntas frecuentes</a></nav>
+                <div class="organizers"><span class="eyebrow">ORGANIZA</span>
+                    <div>
+                        <picture>
+                            <source media="(max-width:767px)" srcset="assets/organizer-1.svg"><img
+                                src="assets/organizer-1-pink.svg" alt="Margarita Gobernadora" loading="lazy">
+                        </picture>
+                        <picture>
+                            <source media="(max-width:767px)" srcset="assets/organizer-2.svg"><img
+                                src="assets/organizer-2-pink.svg" alt="Gobernación del Magdalena" loading="lazy">
+                        </picture>
+                        <picture>
+                            <source media="(max-width:767px)" srcset="assets/organizer-3.svg"><img
+                                src="assets/organizer-3-pink.svg" alt="Indeportes y Fundación Corazón Rosa"
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
             </div>
-            <div class="footer-bottom"><p>SYMPLEX TECHNOLOGY BY YAIR PABON</p><span>Hecho de pasos, motivos y corazón. <b>♥</b></span></div>
+            <div class="footer-bottom">
+                <p>SYMPLEX TECHNOLOGY BY YAIR PABON</p><span>Hecho de pasos, motivos y corazón. <b>♥</b></span>
+            </div>
         </div>
     </footer>
     <dialog id="info-dialog" aria-labelledby="dialog-title"><button class="dialog-close"
@@ -304,11 +351,19 @@
             </svg></button>
     </dialog>
     <dialog id="welcome-dialog" tabindex="-1" aria-label="Octubre, mes rosa: juntas por la vida">
-        <div class="welcome-toolbar"><button class="welcome-close" type="button" aria-label="Cerrar anuncio" title="Cerrar anuncio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
-        <div class="welcome-artwork"><img src="assets/imagen-modal.jpg" alt="Octubre, mes rosa. El mes del amor y de la sensibilización. Juntas por la vida. Pasos para autorevisarte: frente al espejo, palpa con la mano, revisa axilas, en posición acostada y observa el pezón. Conócete, cuídate y corre por muchas más historias." width="1024" height="1536" fetchpriority="high"></div>
-        <a class="welcome-full-image" href="assets/imagen-modal.jpg" target="_blank" rel="noopener">Ver imagen ampliada</a>
+        <div class="welcome-toolbar"><button class="welcome-close" type="button" aria-label="Cerrar anuncio"
+                title="Cerrar anuncio"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m6 6 12 12M18 6 6 18" />
+                </svg></button></div>
+        <div class="welcome-artwork"><img src="assets/imagen-modal.jpg"
+                alt="Octubre, mes rosa. El mes del amor y de la sensibilización. Juntas por la vida. Pasos para autorevisarte: frente al espejo, palpa con la mano, revisa axilas, en posición acostada y observa el pezón. Conócete, cuídate y corre por muchas más historias."
+                width="1024" height="1536" fetchpriority="high"></div>
+        <a class="welcome-full-image" href="assets/imagen-modal.jpg" target="_blank" rel="noopener">Ver imagen
+            ampliada</a>
     </dialog>
     <script src="app.js" defer></script>
+    <script src="registration.js" defer></script>
+    <script src="registration-controls.js" defer></script>
 </body>
 
 </html>
