@@ -1,11 +1,11 @@
 'use strict';
-const registrationDialog = document.createElement('dialog');
+const registrationDialog = document.createElement('main');
 registrationDialog.id = 'registration-dialog';
 registrationDialog.setAttribute('aria-labelledby', 'registration-title');
 const field = (label, name, type = 'text', extra = '') => `<label>${label}<input name="${name}" type="${type}" required ${extra}></label>`;
 const select = (label, name, options) => `<label>${label}<select name="${name}" required><option value="">Selecciona una opción</option>${options.map(([value, text]) => `<option value="${value}">${text}</option>`).join('')}</select></label>`;
 registrationDialog.innerHTML = `
-<button class="dialog-close registration-close" type="button" aria-label="Cerrar formulario">×</button>
+
 <div class="registration-layout">
 <aside class="registration-intro"><img src="assets/logo-blanco-principal.svg" alt="Yo Corro por Caro"><span class="eyebrow">CADA PASO CUENTA</span><h2 id="registration-title">Tu motivo.<br>Tu carrera.</h2><p>Corre por ti, por ella, por una historia que merece seguir.</p><div class="registration-event"><strong>5K · Santa Marta</strong><span>24 de octubre de 2026</span></div><p class="registration-benefits">Un mismo beneficio para todos. Tú eliges cuánto aportar.</p><span class="registration-heart" aria-hidden="true">♡</span></aside>
 <div class="registration-body"><ol class="registration-steps" aria-label="Pasos del formulario"><li aria-current="step">1. Tus datos</li><li>2. Tu aporte</li></ol>
@@ -37,7 +37,7 @@ document.body.append(registrationDialog);
 const form = registrationDialog.querySelector('form');
 const participantStep = registrationDialog.querySelector('#participant-step');
 const contributionStep = registrationDialog.querySelector('#contribution-step');
-let previousFocus;
+
 function showStep(second) {
   participantStep.hidden = second;
   contributionStep.hidden = !second;
@@ -45,17 +45,8 @@ function showStep(second) {
   const heading = registrationDialog.querySelector(second ? '#contribution-step h3' : '#participant-step h3');
   heading.tabIndex = -1;
   heading.focus();
-  registrationDialog.scrollTop = 0;
+  window.scrollTo({ top: 0, behavior: 'instant' });
 }
-document.querySelectorAll('[data-register]').forEach(button => button.addEventListener('click', () => {
-  if (dialog.open) dialog.close();
-  previousFocus = button;
-  registrationDialog.showModal();
-  document.body.classList.add('dialog-open');
-  showStep(!contributionStep.hidden);
-}));
-registrationDialog.querySelector('.registration-close').addEventListener('click', () => registrationDialog.close());
-registrationDialog.addEventListener('close', () => { document.body.classList.remove('dialog-open'); previousFocus?.focus(); });
 const birthDate = form.elements.birthDate;
 birthDate.max = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Bogota' });
 birthDate.addEventListener('input', () => {
@@ -97,4 +88,5 @@ form.addEventListener('submit', event => {
     registrationDialog.querySelector('#registration-feedback').textContent = 'Datos revisados. Tu inscripción todavía no ha sido enviada. Pronto podrás continuar con el pago o validar tu cupón.';
   } else registrationDialog.querySelector('.registration-next').click();
 });
+
 
