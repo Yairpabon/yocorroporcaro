@@ -11,7 +11,8 @@
     <link rel="preload" href="assets/fonts/Metropolis-Regular.otf" as="font" type="font/otf" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="assets/logo-dark.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/hero-costero.webp" as="image">
+    <link rel="preload" href="assets/hero-costero.webp" as="image" media="(min-width:768px)">
+    <link rel="preload" href="assets/hero-costero-telefono.webp" as="image" media="(max-width:767px)">
 </head>
 
 <body>
@@ -72,7 +73,7 @@
     </header>
     <main>
         <section class="hero" id="inicio" aria-labelledby="hero-title">
-            <picture class="hero-photo"><img src="assets/hero-costero.webp"
+            <picture class="hero-photo"><source media="(max-width:767px)" srcset="assets/hero-costero-telefono.webp" width="941" height="1672"><img src="assets/hero-costero.webp"
                     alt="Corredoras de Yo Corro por Caro frente al mar, entre palmeras y montañas de Santa Marta" fetchpriority="high" width="1916"
                     height="821"></picture>
             <div class="hero-fade"></div>
